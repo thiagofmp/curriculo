@@ -1,54 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Currículo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
-
-        #header {
-            background-color: #333;
-            color: #fff;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
             text-align: center;
-            padding: 20px;
+            margin-bottom: 20px;
         }
-
-        #profile-image {
-            max-width: 400px;
+        .header img {
+            max-width: 200px;
             border-radius: 50%;
-            display: block;
-            margin: 0 auto;
         }
-
-        #main-content {
-            padding: 20px;
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .section-content {
+            margin-bottom: 20px;
+        }
+        .work-experience, .education {
+            margin-bottom: 30px;
+        }
+        .work-experience h3, .education h3 {
+            margin-bottom: 10px;
+        }
+        .work-experience p, .education p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div id="header">
-        <h1>Meu Currículo</h1>
-    </div>
-    <div id="main-content">
-        <h2>Dados Pessoais</h2>
-        <img id="profile-image" src="https://www.contabilizei.com.br/contabilidade-online/wp-content/uploads/2020/09/ser-empresario-homem-serio-scaled-e1599161813856.jpg" alt="Foto de Perfil">
-        <p>Nome: Thiago</p>
-        <p>E-mail: Thiago@example.com</p>
-        <p>Telefone: (48) 99999-9999</p>
-
-        <h2>Experiência Profissional</h2>
-        <p>Cargo: Tecnico</p>
-        <p>Empresa: Thiago Tecnologia</p>
-        <p>Descrição: Manutenção técnica.</p>
-
-        <h2>Formação Acadêmica</h2>
-        <p>Curso: ADS</p>
-        <p>Instituição: Faculdade Municipal de Palhoça</p>
-        <p>Ano de Conclusão: *</p>
+    <div class="container">
+        <div class="header">
+            <img src="caminho/para/sua/imagem.jpg" alt="Foto">
+            <h1>Seu Nome</h1>
+            <p>Cargo Desejado</p>
+        </div>
+        <div class="contact-info">
+            <div class="section-title">Informações de Contato</div>
+            <ul>
+                <li>Email: seuemail@example.com</li>
+                <li>Telefone: (00) 1234-5678</li>
+                <li>Endereço: Sua rua, Sua cidade, Seu estado</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">Resumo</div>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae neque eget justo mollis commodo. Aliquam erat volutpat. Ut lacinia dolor non justo ultricies, a semper eros vestibulum.</p>
+            </div>
+        </div>
+        <div class="work-experience">
+            <h3>Experiência Profissional</h3>
+            <p>Empresa A - Cargo - Data de Início até Data de Saída</p>
+            <p>Descrição das responsabilidades e realizações na empresa A.</p>
+        </div>
+        <div class="education">
+            <h3>Educação</h3>
+            <p>Nome da Universidade - Curso - Ano de Conclusão</p>
+            <p>Descrição das atividades e realizações durante o curso.</p>
+        </div>
     </div>
 </body>
 </html>
